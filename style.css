@@ -1,0 +1,17 @@
+/* ページ全体に適用されるスタイル */
+body {
+    font-family: sans-serif; /* 見やすいフォントに変更 */
+    text-align: center;      /* 全ての要素を中央揃えに */
+    margin-top: 50px;        /* 上側に少し余白を作る */
+}
+
+/* ジャンルボタン（.genre-btnクラスを持つ要素）のスタイル */
+.genre-btn {
+    font-size: 16px;         /* 文字を少し大きく */
+    padding: 10px 20px;      /* ボタンの内側の余白 */
+    margin: 5px;             /* ボタンの外側の余白 */
+    cursor: pointer;         /* マウスカーソルを乗せると指の形に変わる */
+    background-color: #f0f0f0; /* ボタンの背景色を薄いグレーに */
+    border: 1px solid #ccc;  /* ボタンの枠線 */
+    border-radius: 8px;      /* ボタンの角を丸くする */
+}
