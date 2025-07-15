@@ -4,26 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ひようらランチアプリ</title>
-    <link rel="stylesheet" href="style.css">  </head>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>ひようらランチアプリ</h1>
+    <div id="main-contents">
+        <h1>ひようらランチアプリ</h1>
 
-    <p>食べたいジャンルを選んでね！</p>
+        <div class="gacha-section">
+            <p>迷ったらコレ！</p>
+            <button id="gacha-btn">おまかせで決める！</button>
+        </div>
 
-<div id="genre-buttons">
-    <button class="genre-btn">ラーメン</button>
-    <button class="genre-btn">うどん・そば</button>
-    <button class="genre-btn">定食</button>
-    <button class="genre-btn">イタリアン</button>
+        <p>食べたいジャンルを選んでね！</p>
 
-</div>
-    <hr>
+        <div id="genre-buttons">
+            <button class="genre-btn">ラーメン</button>
+            <button class="genre-btn">うどん・そば</button>
+            <button class="genre-btn">定食</button>
+            <button class="genre-btn">カレー</button>
+            <button class="genre-btn">イタリアン</button>
+        </div>
 
-    <h2>お店の候補</h2>
+        <hr>
+    </div>
+
+    <h2 id="results-title" class="hidden">今日行けるお店</h2>
+
     <div id="restaurant-list">
         </div>
 
+    <button id="back-btn" class="hidden">戻る</button>
+
+    <script src="script.js"></script>
 </body>
 </html>

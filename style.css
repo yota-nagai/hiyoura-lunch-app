@@ -1,17 +1,123 @@
 /* ページ全体に適用されるスタイル */
 body {
-    font-family: sans-serif; /* 見やすいフォントに変更 */
-    text-align: center;      /* 全ての要素を中央揃えに */
-    margin-top: 50px;        /* 上側に少し余白を作る */
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 50px;
 }
 
-/* ジャンルボタン（.genre-btnクラスを持つ要素）のスタイル */
+a {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/* 「全体からランダム」ボタンのスタイル */
+.gacha-section {
+    margin: 30px 0;
+}
+
+#gacha-btn {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff6347;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+#gacha-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+/* ジャンルボタンのスタイル */
 .genre-btn {
-    font-size: 16px;         /* 文字を少し大きく */
-    padding: 10px 20px;      /* ボタンの内側の余白 */
-    margin: 5px;             /* ボタンの外側の余白 */
-    cursor: pointer;         /* マウスカーソルを乗せると指の形に変わる */
-    background-color: #f0f0f0; /* ボタンの背景色を薄いグレーに */
-    border: 1px solid #ccc;  /* ボタンの枠線 */
-    border-radius: 8px;      /* ボタンの角を丸くする */
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* 選択中のボタンのスタイル */
+.genre-btn.active-btn {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+
+/* お店情報カードのスタイル */
+.shop-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 10px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shop-card h3 {
+    margin-top: 0;
+}
+
+/* 「ジャンル内ランダム」ボタンのスタイル */
+.genre-gacha-section {
+    margin-bottom: 20px;
+}
+
+#genre-gacha-btn {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1e90ff;
+    background-color: #fff;
+    border: 2px solid #1e90ff;
+    padding: 8px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    /* ▼▼▼ transformの変化もスムーズにする ▼▼▼ */
+    transition: background-color 0.2s, color 0.2s, transform 0.1s;
+}
+
+#genre-gacha-btn:hover {
+    background-color: #1e90ff;
+    color: #fff;
+}
+
+/* ▼▼▼ 押された瞬間のスタイルを追加 ▼▼▼ */
+#genre-gacha-btn:active {
+    transform: translateY(2px); /* 少し下に沈む */
+}
+
+
+/* 戻るボタンのスタイル */
+#back-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.1s;
+}
+
+#back-btn:active {
+    transform: translateY(2px);
 }
